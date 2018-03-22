@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"],
+          "uglify": true
+        },
+        "modules": "umd"
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-vue-jsx",
+    [
+      "transform-runtime",
+      {
+        "polyfill": true,
+        "regenerator": true
+      }
+    ]
+  ]
+}
